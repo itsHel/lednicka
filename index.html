@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lednička</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+	
+    <body>
+        <main>
+            <div id="form">
+                <div id="form-inputs">
+                    <label class="form-label">
+                        <input data-showname="název" data-realname="name" class="form-input" id="name"                       value="testFood">
+                        <span>název*</span>
+                    </label>
+                    <label class="form-label">
+                        <input data-realname="created" type="date" class="form-input" id="created">
+                        <span>výroba</span>
+                    </label>
+                    <label class="form-label">
+                        <input data-showname="datum nákupu" data-realname="bought" type="date" class="form-input" id="bought"          value="2023-01-11">
+                        <span>datum nákupu*</span>
+                    </label>
+                    <label class="form-label">
+                        <input data-showname="min trvanlivost" data-realname="minExpire" type="date" class="form-input" id="min-expire"              value="2023-01-24">
+                        <span>min trvanlivost*</span>
+                    </label>
+                    <label class="form-label">
+                        <input data-realname="expire" type="date" class="form-input" id="expire">
+                        <span>datum spotřeby</span>
+                    </label>
+                    <!-- <label class="form-label">
+                        <input data-realname="picture" type="file" class="form-input" id="picture">
+                        <span>fotografie produktu</span>
+                    </label> -->
+                </div>
+                <div id="form-submit">
+                    <button id="confirm-button">Odeslat</button>
+                </div>
+            </div>
+
+            <div id="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>název</th>
+                            <th>výroba</th>
+                            <th>datum nákupu</th>
+                            <th>min trvanlivost</th>
+                            <th>datum spotřeby</th>
+                            <th>fotografie produktu</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

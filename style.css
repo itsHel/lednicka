@@ -1,0 +1,94 @@
+html, body{
+    margin:0;
+    min-width:100vw;
+    min-height:100vh;
+}
+body{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 40px 25px;
+}
+
+#table-wrapper{
+    margin: 40px 0;
+}
+#table-wrapper table{
+    border-collapse: collapse;
+}
+#table-wrapper th{
+    padding: 4px 12px;
+}
+#table-wrapper td{
+    border: 1px solid black;
+    padding:1px 4px;
+}
+#table-wrapper td:not(.table-delete-row):not(.table-picture){
+    cursor:pointer;
+}
+.table-name{
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.delete-row{
+    cursor:pointer;
+}
+.red{
+    background-color: rgb(223, 78, 107);
+}
+.yellow{
+    background-color: rgb(255, 183, 49);
+}
+
+.form-label{
+    position:relative;
+    border-radius:4px;
+    display: inline-block;
+    transition: all 0.25s;
+    margin-top:26px;
+}
+.form-label span{
+    position: absolute;
+    font-size: 16px;
+    top:-22px;
+    left:0;
+    padding:0 2px;
+    transition: all 0.25s;
+    pointer-events: none;
+}
+.form-input{
+    display: inline-block;
+    color: #4f4f4f;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 4px 8px;
+    transition: all .2s linear;
+    line-height: 1.5;
+    width: 160px;
+}
+.form-input:focus{
+    border-color: #1266f1;
+    outline: 0;
+    box-shadow: inset 0 0 0 1px #1266f1;
+}
+
+#confirm-button{
+    color: white;
+    overflow: hidden;
+    min-width: max-content;
+    font-size: 18px;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #2467d1 0%, #2257bf 50%, #1145af 50%, #333b8f 100%);
+}
+#confirm-button:active{
+    transform: scale(1.15);
+}
